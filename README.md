@@ -116,7 +116,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or support, please contact:
 
-- **Name:** Your Name
-- **Email:** your-email@example.com
-- **GitHub:** [Your GitHub Profile](https://github.com/your-github-profile)
+- **Name:** Saksham Sagar
+- **Email:** sagarsaksham007@gmail.com
+- **GitHub:** [Your GitHub Profile]([https://github.com/Saksham0070/])
 ```
