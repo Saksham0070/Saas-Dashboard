@@ -118,5 +118,5 @@ For any inquiries or support, please contact:
 
 - **Name:** Saksham Sagar
 - **Email:** sagarsaksham007@gmail.com
-- **GitHub:** [Your GitHub Profile]([https://github.com/Saksham0070/])
+- **GitHub:** [Your GitHub Profile](https://github.com/Saksham0070)
 ```
