@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #d96aa7;
+    --secondary-color: #f3f5f1; /* White for navbar */
+    --complimentary-color: #88bfb5;
+    --contrast-color: #f2e527;
+    --light-color: #d2a9d9;
+  }
+  
+  .sidebar-container {
+    background-color: #88bfb5;
+    border-width: 2px;
+    display: flex;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80px; /* Adjusted for spacing */
+    background: var(--secondary-color);
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .sidebar-company-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the company name */
+    color: #263334;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #11dbed;
+  }
+  
+  .sidebar-link {
+    font-size: 30px; /* Adjusted icon size */
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 15px; /* Reduced spacing between icons */
+    text-align: center;
+  }
+  
+  .sidebar-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .content {
+    margin-left: 80px; /* Leaves space for the sidebar */
+    width: calc(100% - 80px);
+  }
+  
+  section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  /* Styles applied on trigger */
+  section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards 0.5s;
+  }
+  
+  #first {
+    background: var(--primary-color);
+  }
+  
+  #second {
+    background: var(--complimentary-color);
+  }
+  
+  #third {
+    background: var(--contrast-color);
+  }
+  
+  #fourth {
+    background: var(--light-color);
+  }
+  
+  @keyframes fadeIn {
+    100% {
+      opacity: 1;
+    }
+  }
+  

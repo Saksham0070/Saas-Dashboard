@@ -1,0 +1,122 @@
+.dashboard-container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+.numeric-continer{
+  max-width: 750px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.num-contain{
+  align-items: center;
+}
+.name-spec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.num-data{
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.small-numeric{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  left: 0px;
+}
+
+.skill-info {
+  display: flex;
+  left: 0px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1d9dd9; /* Adjust the color as needed */
+  transition: width 0.3s ease-in-out;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dashboard-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #5a5a5a;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.photo-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.profile-photo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}
