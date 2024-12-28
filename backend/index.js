@@ -18,6 +18,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
 app.use('/api/',require("./routes/userRoutes"));
+app.use('/api/',require("./routes/jobsRoutes"));
 
 
 

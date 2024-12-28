@@ -21,6 +21,18 @@ db.on("connected", () => {
 });
 
 //Fetching Food-Category directly from Database (Collection)
+
+db.on("open",async ()=>{
+  try{
+    const jobCategoryItems = db.collection('jobs_info');
+    const jobCategory = await jobCategoryItems.find().toArray();
+    global.jobCategory = jobCategory;
+    console.log(global.jobCategory);
+  }catch(err)
+{
+  console.log(err,"Error Fetching the Data");
+}})
+
 // db.on("open",async ()=>{
 
 //   try{

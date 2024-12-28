@@ -221,7 +221,9 @@ const Dashboard = () => {
                 <div style={{fontSize:"10px",color:"#828181"}}>2.00pm-4.00pm</div>
               </div>
             </div>
-            <DateCalendarReferenceDate />
+            <div className="calender">
+            <DateCalendarReferenceDate/>
+            </div>
           </div>
         </div>
       ) : (
