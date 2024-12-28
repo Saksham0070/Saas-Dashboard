@@ -102,6 +102,46 @@ router.post(
   }
 );
 
+
+// Update Profile Endpoint
+router.put(
+  "/updateProfile",
+  upload.single("photo"), // Multer handles the file upload
+  async (req, res) => {
+    const { userId, userName, userEmail, specialisation, skillSet, certification, role } = req.body;
+
+    try {
+      const updates = {
+        userName,
+        userEmail,
+        role,
+        specialisation,
+        skillSet: skillSet ? skillSet.split(",") : [], // Convert comma-separated string to array
+        certification: certification ? certification.split(",") : [], // Convert comma-separated string to array
+      };
+
+      if (req.file) {
+        // Update photo URL if a new photo is uploaded
+        updates.photo = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
+      }
+
+      // Update the user in the database
+      const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true });
+
+      if (!updatedUser) {
+        return res.status(404).json({ success: false, error: "User not found" });
+      }
+
+      console.log("User Profile Updated:", updatedUser);
+      res.status(200).json({ success: true, message: "Profile updated successfully!", data: updatedUser });
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ success: false, error: "Server Error" });
+    }
+  }
+);
+
+
 // Get Dashboard Data Endpoint
 router.get("/getDashboard", async (req, res) => {
   // Extract token from headers

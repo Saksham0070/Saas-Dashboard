@@ -1,4 +1,4 @@
-.dashboard-container {
+.dashboard-container-jobs {
   display: grid; /* Enables grid layout */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible columns */
   gap: 16px; /* Spacing between cards */
@@ -6,7 +6,7 @@
   background-color: #f4f4f4; /* Light background for the grid */
 }
 
-.dashboard-content {
+.dashboard-content-jobs {
   background-color: #ffffff; /* White card background */
   border: 1px solid #ddd; /* Light border */
   border-radius: 8px; /* Rounded corners */
@@ -16,26 +16,26 @@
   font-family: Arial, sans-serif; /* Consistent font */
   width: 30%;
 }
-.dashboard-content:hover{
+.dashboard-content-jobs:hover{
   transform: translateY(-10px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dashboard-content h3 {
+.dashboard-content-jobs h3 {
   font-size: 1.5em;
   margin-bottom: 8px;
   color: #007bff;
 }
 
-.dashboard-content p {
+.dashboard-content-jobs p {
   font-size: 1em;
   margin-bottom: 16px;
   color: #555;
 }
 
-.dashboard-content a {
+.dashboard-content-jobs a {
   text-decoration: none;
   color: white;
   background-color: #007bff;
@@ -46,7 +46,7 @@
   transition: background-color 0.3s;
 }
 
-.dashboard-content a:hover {
+.dashboard-content-jobs a:hover {
   background-color: #0056b3;
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
